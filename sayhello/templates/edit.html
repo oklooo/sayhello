@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>编辑</h3>
+<form method="post">
+    <input type="text" name="poster" autocomplete="off" required value="{{message.poster}}">
+    {{message.poster}}的留言<br><input type="text" name="content" autocomplete="off" required value="{{message.content}}">
+    <input class='btn' type="submit" name="发表" value="发表">
+</form>
+{% endblock %}
